@@ -3,7 +3,6 @@ const cateA = document.querySelector('.lado1');
 const cateO = document.querySelector('.lado2');
 const btnCal = document.querySelector('.btn-cal');
 const resul = document.querySelector('#resultado');
-// const altu = hipo/2;
 
 btnCal.addEventListener('click', calcularPerTriangulo);
 

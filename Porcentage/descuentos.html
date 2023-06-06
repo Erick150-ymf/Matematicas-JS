@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacular descuentos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+        #price {
+            width: 5rem;
+            border: 1px transparent;
+            border-bottom: 1px solid gray;
+        }
+        #discount {
+            width: 2.5rem;
+            border: 1px transparent;
+            border-bottom: 1px solid gray;
+        }
+        .container {
+            margin: 3rem;
+        }
+        h2 {
+            width: 100%;
+            padding-left: 2rem;
+            font-size: 1.3rem;
+        }
+        .container_product {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        img {
+            width: 40rem;
+            height: 20rem;
+            padding: 2rem;
+        }
+        .container_product-price {
+            width: 20rem;
+            padding: 2rem;
+            text-align: center;
+        }
+        .labels {
+            position: absolute;
+            left: 40.5rem;
+            top: 28.75rem;
+        }
+        .labels2 {
+            position: absolute;
+            left: 44rem;
+            top: 31.45rem;
+            color: red;
+        }
+        #newPrice {
+            font-size: 1.4rem;
+            padding-left: 2rem;
+        }
+        #oldPrice {
+            font-weight: 700;
+            padding-left: 2rem;
+        }
+        s {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando Porcentage de descuento</h1>
+    
+    <label>Precio anterior: </label>
+    <input type="text" id="price">
+    <br>
+    <label>Aplicando el: </label>
+    <input type="text" id="discount"><span>%</span>
+    <br>
+    <br>
+    <button type="button" id="calcular">Cacular descuento</button>
+
+    <div class="container">
+        <h2>RTX 460 Ti con una frecuencia base de 2.310 MHz y con turbo de 2.535 MHz</h2>
+        <div class="container_product">
+            <img src="https://www.hd-tecnologia.com/imagenes/articulos/2023/04/La-NVIDIA-GeForce-RTX-4060-Ti-llegaria-con-un-precio-de-400-dolares-2.jpg" alt="NVIDIA" class="RTX">
+            <div class="container_product-price">
+                <label class="labels"><b>Por campaña: </b></label>
+                <p id="newPrice"></p>
+                <label class="labels2">Antes: </label>
+                <s><p id="oldPrice"></p></s>
+            </div>
+        </div>
+    </div>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

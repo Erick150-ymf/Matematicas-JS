@@ -65,6 +65,12 @@ function calcularAlturaTriangulo(lado1, base) {
     }
 }
 
+function calcularAlturaEscaleno(lado1, lado2, base) {
+    const resultadoDeCuadrados = ((lado1 ** 2) - (lado2 ** 2) + (base ** 2));
+    
+    return Math.sqrt( (lado1 ** 2) - (((resultadoDeCuadrados) / (2 * base)) ** 2) );
+}
+
 console.groupEnd('triangulo')
 
 // Circunferencia
