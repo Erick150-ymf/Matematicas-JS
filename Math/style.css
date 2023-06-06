@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    height: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.triangulo {
+    width: 150px;
+    height: 150px;
+    border-bottom: 150px solid #1D78E9;
+    border-left: 150px solid transparent;
+    border-right: 0px solid transparent;
+    margin-left: 100px;
+}
+
+.lado1 {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 22.2em;
+    left: 12.5em;
+    text-align: center;
+}
+
+.lado2 {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    left: 19.5em;
+    top: 16em;
+    text-align: center;
+}
+
+.hipotenusa {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 14.1em;
+    left: 9.5em;
+    text-align: center;
+}
+
+.btn-cal {
+    width: 60px;
+    height: 25px;
+    margin: 70px 0 0 150px;
+}
+
+#resultado {
+    position: absolute;
+    left: 13.7em;
+    top: 22.34rem;
+    text-align: center;
+    padding: 3px;
+}
