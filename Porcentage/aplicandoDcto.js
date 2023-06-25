@@ -13,7 +13,7 @@ const couponList = [];
 couponList.push({
     name: 'ErickDev',
     discount: 45,
-    expirationDate: new Date(2023, 05, 31),
+    expirationDate: new Date(2023, 5, 31),
 });
 couponList.push({
     name: 'Vianka',

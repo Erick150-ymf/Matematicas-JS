@@ -1,4 +1,4 @@
-export const ErickMath = {};
+const ErickMath = {};
 
         // MODA
 
@@ -50,7 +50,7 @@ ErickMath.calcularMedia = function calcularMedia(lista) {
     // Ordenamos la lista
     const ordenarLista = lista.sort((a, b) => a - b);
 
-    const listaPar = esPar(lista);
+    const listaPar = ErickMath.esPar(lista);
             // Verificar si la lista es par o es inpar.
     if (listaPar) {
         // Declaramos 2 constantes para hallar los 2 numeros mas cercanos entre una lista par.
@@ -60,7 +60,7 @@ ErickMath.calcularMedia = function calcularMedia(lista) {
         const mitad = [];
         mitad.push(index1);
         mitad.push(index2);
-        return calcularProm(mitad);
+        return ErickMath.calcularProm(mitad);
     } else {
         // Si la lista es inpar con 
         const inpar = lista[Math.floor(lista.length / 2)];
